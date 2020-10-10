@@ -14,19 +14,6 @@
 .ap-hover, .aplayer-icon, .aplayer-miniswitcher, .live2d-tool {
     border-radius: 0 6px 6px 0 !important;
 }
-/*默认的鼠标样式*/
-body {cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur"), auto;}
-/*p标签的鼠标样式*/
-p {
-    margin-bottom: 1.5em;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur), auto;
-}
-/*a链接的鼠标样式*/
-a {
-    background-color: transparent;
-    text-decoration: none;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto;
-}
 /*歌词的层级结构*/
 .aplayer.aplayer-fixed .aplayer-lrc{
     z-index: 0 !important;
