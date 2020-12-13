@@ -19,60 +19,41 @@
         // 书单配置
         bookList: [
             {
+                // 书目标题
                 title: '在读',
+                // 书目数据
                 books: [
                     {
+                        // 封面
                         cover: 'https://images.cnblogs.com/cnblogs_com/BNTang/1846939/t_200913155700%E7%A0%81%E5%87%BA%E9%AB%98%E6%95%88.jpg',
+                        // 书名
                         name: '码出高效：Java开发手册',
+                        // 原书名
                         formerNname: '',
+                        // 作者
                         author: '杨冠宝 / 高海慧',
+                        // 译者
                         translator: '',
+                        // 出版社
                         press: '电子工业出版社',
-                        year: '2018-10'
+                        // 出版年
+                        year: '2018-10',
+                        // 等级1〜5
+                        score: 5,
                     }
                 ]
             },
             {
                 title: '库存',
-                books: [
-                    /*{
-                        cover: 'https://images.weserv.nl/?url=https://img1.doubanio.com/view/subject/l/public/s24514468.jpg',
-                        name: '白夜行',
-                        formerNname: '',
-                        author: '[日] 东野圭吾',
-                        translator: '刘姿君',
-                        press: '南海出版公司',
-                        year: '2013-1'
-                    },*/
-                ]
+                books: []
             },
             {
                 title: '心愿',
-                books: [
-                    /*{
-                        cover: 'https://images.weserv.nl/?url=https://img1.doubanio.com/view/subject/l/public/s4220739.jpg',
-                        name: '设计模式之禅',
-                        formerNname: '',
-                        author: '秦小波',
-                        translator: '',
-                        press: '机械工业出版社',
-                        year: '2010-3'
-                    },*/
-                ]
+                books: []
             },
             {
                 title: '已读',
-                books: [
-                    /*{
-                        cover: 'https://images.weserv.nl/?url=https://img9.doubanio.com/view/subject/l/public/s28147406.jpg',
-                        name: 'GitHub入门与实践',
-                        formerNname: 'GitHub実践入門',
-                        author: '[日] 大塚弘记',
-                        translator: '支鹏浩 / 刘斌',
-                        press: '人民邮电出版社',
-                        year: '2015-7'
-                    },*/
-                ]
+                books: []
             },
         ],
         // menuNavList - 菜单导航
@@ -248,29 +229,28 @@
             "HTML",
             "Jquery",
             "Text",
-            "MongoDB"
+            "MongoDB",
+            "C"
         ],
         // 使用 highlightjs 渲染代码
         essayCodeHighlightingType: "highlightjs",
         // essayTopAnimationRendered - 是否渲染文章页banner动效
         essayTopAnimationRendered: false,
-        /*
-        gruvbox-dark
-        qtcreator_dark
-        a11y-dark
-        */
+        // 代码样式
         essayCodeHighlighting: "atom-one-dark-reasonable",
         // 是否显示博客园广告
-        advertising: false,
+        advertising: true,
         // 是否开启版本映射，默认关闭
-        isVersionMapping: false,
+        isVersionMapping: true,
         // bottomBlogroll - 友情链接
         bottomBlogroll: [
             ["哈喽沃德先生", 'https://mrhelloworld.com'],
             ["MrBird", 'https://mrbird.cc'],
             ["unixcs", 'https://www.cnblogs.com/unixcs'],
             ["海韵༒听心", 'https://www.cnblogs.com/mumuyinxin'],
-            ["BNDong", 'https://www.cnblogs.com/bndong']
+            ["BNDong", 'https://www.cnblogs.com/bndong'],
+            ["文章密码私信我", 'https://www.cnblogs.com/BNTang'],
+            ["交流群：598347590", 'https://www.cnblogs.com/BNTang']
         ],
         //bottomText - 页脚标语
         bottomText: {
@@ -301,7 +281,7 @@
         },
         // footerStyle - 页脚样式
         // 1/2
-        footerStyle: 2,
+        footerStyle: 1,
         // switchDayNight - 日/夜间模式
         switchDayNight: {
             // 是否开启日/夜间模式切换按钮
