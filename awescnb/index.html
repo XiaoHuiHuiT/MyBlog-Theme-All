@@ -3,14 +3,22 @@
     $.awesCnb({
         // 配置主题
         theme: {
-            // 需要切换的主题名称
+            // 需要切换的主题名称, 要使用的皮肤主题名称
             name: 'geek',
+            // 全局主题色 defaultValue=跟随皮肤
+            // color: '',
             // 网站标题
             title: 'BNTang',
+            // 头像图片链接
+            avatar: 'https://images.cnblogs.com/cnblogs_com/BNTang/1812554/t_20092711144720180414165942.jpg',
             // 网站图标
             favicon: 'https://images.cnblogs.com/cnblogs_com/BNTang/1812554/t_200927111234BNTangIcon.png',
             // 头部背景，图片链接
-            headerBackground: 'https://w.wallhaven.cc/full/39/wallhaven-39dz13.png'
+            headerBackground: 'https://files.dbnuo.com/wallpaper/wallhaven-13mk9v.webp'
+        },
+        // 画笔
+        notation: {
+            enable: true,
         },
         // 图片灯箱
         imagebox: {
@@ -27,9 +35,53 @@
         signature: {
             enable: true,
             contents: [
-                "This theme is built with <b style='color:#ff6b81'>awescnb</b>.",
+                "🖖 I’m a system architecture developer. <b style='color:#ff6b81'>BNTang</b>.",
                 "<b>console.log(🍺);</b>",
             ],
         },
+        // 代码高亮
+        highLight: {
+            dark: 'github',
+            light: 'github',
+        },
+        // 按钮工具
+        tools: {
+            // 是否启用
+            enable: true,
+            // 是否自动展开
+            initialOpen: false,
+        },
+        // 弹幕
+        barrage: {
+            enable: true,
+            opacity: 0.6,
+            colors: [],
+            barrages: [],
+            indexBarrages: [],
+            postPageBarrages: [],
+        },
+        // 自定义链接
+        links: [
+            {
+                name: 'Blog',
+                link: 'https://xiaohuihuit.github.io',
+            },
+            {
+                name: 'Gitee',
+                link: 'https://gitee.com/tang_ying_hao',
+            },
+            {
+                name: 'GitLab',
+                link: 'https://gitlab.com/Jone_Tang',
+            },
+            {
+                name: 'GitHub',
+                link: 'https://github.com/XiaoHuiHuiT',
+            },
+            {
+                name: 'Cnblogs',
+                link: 'https://www.cnblogs.com',
+            },
+        ],
     })
 </script>
