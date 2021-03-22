@@ -18,3 +18,7 @@
 .aplayer.aplayer-fixed .aplayer-lrc{
     z-index: 0 !important;
 }
+
+#under_post_card1, #under_post_card2{
+    display: none;
+}
