@@ -19,6 +19,11 @@
     z-index: 0 !important;
 }
 
-#under_post_card1, #under_post_card2{
-    display: none;
+/*隐藏广告*/
+#under_post_card1,
+#under_post_card2,
+#ad_t2,
+#cnblogs_c1,
+#cnblogs_c2{
+    display: none !important;
 }
