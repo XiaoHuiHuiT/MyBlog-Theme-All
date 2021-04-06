@@ -4,24 +4,6 @@
 <script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script>
 <div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="3231125886" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="orange"></div>
 
-<!--点击特效-->
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/mo-js/0.265.6/mo.min.js"></script>
-<script>
-    const burst = new mojs.Burst({
-        left: 0,
-        top: 0,
-        radius: {5: 40},
-        children: {shape: "circle", fill: ["red", "cyan", "orange"], fillOpacity: .8, radiusX: 3.5, radiusY: 3.5}
-    });
-    document.addEventListener("click", function (a) {
-        burst.tune({
-            x: a.pageX,
-            y: a.pageY
-        }).generate().replay()
-    });
-</script>
-
 <!--网站统计-->
 <div id="cnzzProtocol"  style="display: none;">
     <span class="id_cnzz_stat_icon" id='cnzz_stat_icon_1279528291'></span>
