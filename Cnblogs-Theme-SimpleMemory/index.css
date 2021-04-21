@@ -2,9 +2,10 @@
 
 /*歌词颜色*/
 .aplayer .aplayer-lrc p{font-size: 12px;color: #fe9600 !important;line-height: 16px!important;height: 16px!important;padding: 0!important;margin: 0!important;transition: all .5s ease-out;opacity: .4;overflow: hidden;}
-.aplayer.aplayer-fixed{z-index: 0 !important;}
+.aplayer.aplayer-fixed{z-index: 0 !important;left: -66px !important;transition: all .3s ease;}
+.aplayer.aplayer-fixed:hover{left: 0px !important;}
+.aplayer.aplayer-fixed:hover .aplayer-body{left: 0px !important;}
 .aplayer.aplayer-fixed .aplayer-body{left: -66px !important;}
-.aplayer.aplayer-fixed .aplayer-body:hover {left: 0 !important;}
 /*圆角样式*/
 .aplayer.aplayer-fixed .aplayer-body{
     z-index: 0 !important;
