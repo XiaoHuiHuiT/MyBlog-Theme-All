@@ -21,14 +21,76 @@
                     "https://files.dbnuo.com/wallpaper/wallhaven-13mk9v.webp",
                     "https://files.dbnuo.com/wallpaper/wallhaven-2ew3pm.webp",
                 ],
+                // 主页banner标语获取源
+                titleSource: 'one',
+            },
+            // 文章页头图
+            article: {
+                background: [
+                    "https://files.dbnuo.com/wallpaper/wallhaven-96w8e8.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-oxvkxp.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-83w372.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-39qjjd.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-dgojvj.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-13mk9v.webp",
+                    "https://files.dbnuo.com/wallpaper/wallhaven-2ew3pm.webp",
+                ],
             },
         },
         // 侧边栏 navList - 菜单导航
         sidebar: {
             // 列表数据 ['导航名称', '链接', 'icon']
             navList: [
-                ['我的博客1', 'https://www.cnblogs.com/bndong/', 'icon-github'],
-                ['我的博客2', 'https://www.cnblogs.com/bndong/', 'icon-github'],
+                ['Blog', 'https://xiaohuihuit.github.io', 'icon-blog-solid'],
+                ['Gitee', 'https://gitee.com/BNTang', 'icon-gitee1'],
+                ['GitLab', 'https://gitlab.com/Jone_Tang', 'icon-gitlab'],
+                ['GitHub', 'https://github.com/BNTang', 'icon-github'],
+                ['Cnblogs', 'https://www.cnblogs.com', 'icon-cnblogs'],
+            ],
+            // 个人信息背景
+            infoBackground: 'https://bndong.github.io/images/menu_bg.gif',
+        },
+        // 加载loading
+        loading: {
+            rebound: {
+                tension: 16,
+            },
+            spinner: {
+                id: 'spinner',
+                radius: 90,
+            }
+        },
+        // 顶部进度条
+        progressBar: {
+            color: '#77b6ff',
+        },
+        // title - 页面标签
+        title: {
+            onblur: '(oﾟvﾟ)ノ Hi',
+            // 失去焦点变化延时
+            onblurTime: 500,
+            // focus - 获取焦点标签文字
+            focus: '(*´∇｀*) 欢迎回来！',
+        },
+        footer: {
+            style: 2,
+            text: {
+                left: '好好学习',
+                right: '天天向上',
+                iconFont: {
+                    icon: "icon-xl",
+                    color: "red",
+                    fontSize: "16px"
+                }
+            },
+        },
+        links: {
+            // footer - 页脚友链
+            footer: [
+                ["mrbird", 'https://mrbird.cc'],
+                ["bndong", 'https://www.cnblogs.com/bndong'],
+                ["TangXiaoHuiHui", 'https://www.cnblogs.com/TangXiaoHuiHui'],
+                ["LOGI", 'https://logi.im'],
             ],
         },
     }
