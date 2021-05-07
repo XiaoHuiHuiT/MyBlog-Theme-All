@@ -93,6 +93,145 @@
                 ["LOGI", 'https://logi.im'],
             ],
         },
+        // consoleList - 控制台输出
+        consoleList: [
+            ['BNTang Gitee', 'https://gitee.com/BNTang'],
+            ['BNTang GitHub', 'https://github.com/BNTang'],
+            ['BNTang GitLab', 'https://gitlab.com/Jone_Tang'],
+            ['BNTang Email', '303158131@qq.com'],
+        ],
+        // cnzz - 网站统计
+        cnzz: "1279528291",
+        // mac风格代码框
+        code: {
+            type: 'hljs',
+            options: {
+                hljs: {
+                    theme: 'atom-one-dark-reasonable',
+                    languages: ['Bash', 'CSS', 'Dockerfile', 'Go', 'HTML', 'XML', 'HTTP']
+                },
+                // mac 风格代码块
+                macStyle: true,
+                // 代码行号渲染
+                line: true,
+            },
+        },
+        switchDayNight: {
+            enable: true,       // 是否开启日/夜间模式切换按钮
+            auto: {             // 自动切换相关配置
+                enable: false,  // 开启自动切换
+                dayHour: 5,     // 日间模式开始时间，整数型，24小时制
+                nightHour: 19   // 夜间模式开始时间，整数型，24小时制
+            }
+        },
+        // 字体图标库
+        fontIconExtend: "//at.alicdn.com/t/font_xxxxxxxxx.css",
+        rtMenu: {
+            qrCode: 'https://images.cnblogs.com/cnblogs_com/BNTang/1812554/t_200723102903WeChat.jpg?a=1595509689027',
+            reward: {
+                // 支付宝收款码
+                alipay: 'https://images.cnblogs.com/cnblogs_com/TangXiaoHuiHui/1653035/t_200710143042alipay.png',
+                // 微信收款码
+                wechatpay: 'https://images.cnblogs.com/cnblogs_com/TangXiaoHuiHui/1653035/t_200710143033wechatpay.png'
+            },
+        },
     }
+
+    // 友链配置
+    window.cnblogsConfig.links.page = [
+        {
+            name: 'BNDong',
+            introduction: 'IT技术类博客',
+            avatar: 'https://blog.dbnuo.com/images/avatar.gif',
+            url: 'https://blog.dbnuo.com'
+        },
+        {
+            name: 'LOGI',
+            introduction: '会点代码的强迫症',
+            avatar: 'https://code.bdstatic.com/npm/logicdn@1.0.0/logi.im/usr/images/global/logo.webp',
+            url: 'https://logi.im'
+        },
+    ];
+
+    // 书单配置
+    window.cnblogsConfig.bookList = [
+        {
+            title: '在读',
+            books: [
+                {
+                    // 封面
+                    cover: 'https://images.cnblogs.com/cnblogs_com/BNTang/1846939/t_200913155700%E7%A0%81%E5%87%BA%E9%AB%98%E6%95%88.jpg',
+                    // 书名
+                    name: '码出高效：Java开发手册',
+                    // 原书名
+                    formerName: '',
+                    // 作者
+                    author: '杨冠宝 / 高海慧',
+                    // 译者
+                    translator: '',
+                    // 出版社
+                    press: '电子工业出版社',
+                    // 出版年
+                    year: '2018-10',
+                    // 等级1〜5
+                    score: 5,
+                    readDate: '23.51.05',
+                    readPercentage: '50%'
+                }
+            ]
+        },
+        {
+            title: '库存',
+            books: [
+                {
+                    // 封面
+                    cover: 'https://images.cnblogs.com/cnblogs_com/BNTang/1846939/t_210426110537ArtOfWar.jpg',
+                    // 书名
+                    name: '孙子兵法',
+                    // 原书名
+                    formerName: '',
+                    // 作者
+                    author: '孙武',
+                    // 译者
+                    translator: '郭化若',
+                    // 出版社
+                    press: '上海古籍出版社',
+                    // 出版年
+                    year: '2006-07-01',
+                    // 等级1〜5
+                    score: 5,
+                    readDate: '00.00.00',
+                    readPercentage: '0%'
+                },
+            ]
+        },
+        {
+            title: '心愿',
+            books: []
+        },
+        {
+            title: '已读',
+            books: []
+        },
+    ];
 </script>
+
 <script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.0/dist/simpleMemory.js" defer></script>
+
+<!--点击特效-->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/mo-js/0.265.6/mo.min.js"></script>
+<script>
+    const burst = new mojs.Burst({
+        left: 0,
+        top: 0,
+        radius: {5: 40},
+        children: {shape: "circle", fill: ["red", "cyan", "orange"], fillOpacity: .8, radiusX: 3.5, radiusY: 3.5}
+    });
+    document.addEventListener("click", function (a) {
+        burst.tune({
+            x: a.pageX,
+            y: a.pageY
+        }).generate().replay();
+    });
+</script>
