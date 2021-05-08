@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击特效</title>
+</head>
+<body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/mo.min.js"></script>
+<script>
+    const burst = new mojs.Burst({
+        left: 0,
+        top: 0,
+        radius: {5: 40},
+        children: {shape: "circle", fill: ["red", "cyan", "orange"], fillOpacity: .8, radiusX: 3.5, radiusY: 3.5}
+    });
+    document.addEventListener("click", function (a) {
+        burst.tune({
+            x: a.pageX,
+            y: a.pageY
+        }).generate().replay();
+    });
+</script>
+</body>
+</html>

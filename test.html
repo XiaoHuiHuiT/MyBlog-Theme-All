@@ -172,7 +172,6 @@
         }
     ];
 
-    // 书单
     window.cnblogsConfig.bookList = [
         {
             title: '在读',
@@ -389,24 +388,4 @@
             // console.log('日/夜间模式');
         },
     }
-</script>
-
-<script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/simpleMemory.js" defer></script>
-
-<!--点击特效-->
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/mo-js/0.265.6/mo.min.js"></script>
-<script>
-    const burst = new mojs.Burst({
-        left: 0,
-        top: 0,
-        radius: {5: 40},
-        children: {shape: "circle", fill: ["red", "cyan", "orange"], fillOpacity: .8, radiusX: 3.5, radiusY: 3.5}
-    });
-    document.addEventListener("click", function (a) {
-        burst.tune({
-            x: a.pageX,
-            y: a.pageY
-        }).generate().replay();
-    });
 </script>
